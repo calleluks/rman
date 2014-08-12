@@ -7,13 +7,17 @@ module Rman
     def run
       store = RDoc::RI::Store.new(RDoc::RI::Paths.system_dir)
       store.load_all
-      options = RDoc::Options.new
-      options.op_dir = output_directory
-      options.mandb_section = mandb_section
       RDoc::Generator::Mdoc.new(store, options).generate
     end
 
     private
+
+    def options
+      RDoc::Options.new.tap do |options|
+        options.op_dir = output_directory
+        options.mandb_section = mandb_section
+      end
+    end
 
     def output_directory
       File.expand_path("~/.man")
