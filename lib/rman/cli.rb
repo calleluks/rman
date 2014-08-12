@@ -1,3 +1,4 @@
+require "rbconfig"
 require "rdoc"
 require "rdoc/generator/mdoc"
 
@@ -8,7 +9,18 @@ module Rman
       store.load_all
       options = RDoc::Options.new
       options.op_dir = "doc"
+      options.mandb_section = mandb_section
       RDoc::Generator::Mdoc.new(store, options).generate
+    end
+
+    private
+
+    def mandb_section
+      "3-ruby-#{ruby_version.gsub(".", "-")}"
+    end
+
+    def ruby_version
+      RbConfig::CONFIG["ruby_version"]
     end
   end
 end
