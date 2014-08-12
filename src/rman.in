@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift("@rubydir@")
+
+require "@gemsetuppath@"
+require "rman/cli"
+
+Rman::CLI.new.run

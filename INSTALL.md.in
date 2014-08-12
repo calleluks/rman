@@ -1,0 +1,25 @@
+rman installation
+=================
+
+Prerequisites
+-------------
+
+* Ruby version 1.9.3 or later
+
+Installation
+------------
+
+1. Download and extract the latest release:
+
+        curl -O https://github.com/thoughtbot/rman/releases/download/v@PACKAGE_VERSION@/rman-@PACKAGE_VERSION@.tar.gz
+        tar -zxvf rman-@PACKAGE_VERSION@.tar.gz
+        cd rman-@PACKAGE_VERSION@
+
+2. Configure the distribution.
+
+        ./configure
+
+3. Build and install rman:
+
+        make
+        sudo make install
