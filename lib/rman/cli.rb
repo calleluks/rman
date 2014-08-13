@@ -46,6 +46,8 @@ module Rman
     end
 
     def generate_manual_pages
+      puts "Generating and installing man pages for Ruby #{ruby_version} in "\
+        "~/.man..."
       store = RDoc::RI::Store.new(RDoc::RI::Paths.system_dir)
       store.load_all
       RDoc::Generator::Mdoc.new(store, options).generate
