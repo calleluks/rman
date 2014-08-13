@@ -1,0 +1,60 @@
+.Dd August 13, 2014
+.Dt RMAN 1
+.Os
+.Sh NAME
+.Nm rman
+.Nd manual pages for
+.Xr ruby 1
+core modules, classes and methods.
+.Sh SYNOPSIS
+.Nm rman
+.Sh DESCRIPTION
+.Nm rman
+is a tool for generating and installing manual pages for
+.Xr ruby 1
+core modules, classes and methods. It does so by parsing the
+.Xr ri 1
+formatted documentation that is bundled with the
+.Xr ruby 1
+distribution.
+.Pp
+Generated manual pages are installed in the
+.Pa ~/.man
+directory.
+.Pp
+.Nm rman
+will generate manual pages for the
+.Xr ruby 1
+version that is found in the environment
+.Nm rman
+is run in. To generate manual pages for other installed
+.Xr ruby 1
+versions, switch
+.Xr ruby 1
+version and make sure
+.Ic /usr/bin/env ruby -v
+reports the desired version before running
+.Nm rman .
+.Pp
+To access the installed manual pages using
+.Xr man 1 ,
+.Pa ~/.man
+must be added to the
+.Xr man 1
+manual page search path. On many systems this can be done by adding
+.Pa ~/.man
+to the
+.Ev MANPATH
+environment variable. For details on how how to add
+.Pa ~/.man
+to the
+.Xr man 1
+manual page search path see
+.Xr man 1 .
+.Sh SEE ALSO
+.Xr man 1
+.Xr ruby 1
+.Xr ri 1
+.Sh AUTHORS
+.An Calle Erlandsson Aq calle@thoughtbot.com
+.An thoughtbot Aq hello@thoughtbot.com

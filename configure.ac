@@ -23,6 +23,6 @@ AC_SUBST([libfiles])
 AC_SUBST([vendorfiles])
 AC_SUBST([gemsetuppath])
 
-AC_CONFIG_FILES([Makefile lib/rman/Makefile src/Makefile vendor/Makefile])
+AC_CONFIG_FILES([Makefile lib/rman/Makefile src/Makefile vendor/Makefile man/Makefile])
 
 AC_OUTPUT
