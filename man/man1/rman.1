@@ -8,6 +8,8 @@
 core modules, classes and methods.
 .Sh SYNOPSIS
 .Nm rman
+.Op Fl v | -version
+.Op Fl h | -help
 .Sh DESCRIPTION
 .Nm rman
 is a tool for generating and installing manual pages for
@@ -17,6 +19,15 @@ core modules, classes and methods. It does so by parsing the
 formatted documentation that is bundled with the
 .Xr ruby 1
 distribution.
+.Pp
+.Nm rman
+supports these options and arguments:
+.Bl -tag -width "-v, --version"
+.It Fl v, -version
+display the version number and exit.
+.It Fl h , Fl -help
+display a help message and exit.
+.El
 .Pp
 Generated manual pages are installed in the
 .Pa ~/.man

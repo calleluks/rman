@@ -7,4 +7,4 @@ $LOAD_PATH.unshift(File.expand_path("../../lib", __FILE__))
 
 require "rman/cli"
 
-Rman::CLI.new.run
+Rman::CLI.run ARGV

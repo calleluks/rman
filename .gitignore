@@ -9,6 +9,7 @@ config.status
 configure
 install-sh
 missing
+lib/rman/version.rb
 src/rman
 vendor/gems
 *.tar.gz

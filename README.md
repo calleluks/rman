@@ -21,7 +21,7 @@ Installation
 Usage
 -----
 
-    rman
+    rman [-v | --version] [-h | --help]
 
 Generated manual pages are installed in the `~/.man` directory.
 

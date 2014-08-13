@@ -5,4 +5,4 @@ $LOAD_PATH.unshift("@rubydir@")
 require "@gemsetuppath@"
 require "rman/cli"
 
-Rman::CLI.new.run
+Rman::CLI.run ARGV

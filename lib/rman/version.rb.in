@@ -1,0 +1,3 @@
+module Rman
+  VERSION = "@PACKAGE_VERSION@"
+end
