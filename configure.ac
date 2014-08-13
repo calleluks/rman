@@ -1,5 +1,5 @@
 AC_PREREQ([2.69])
-AC_INIT([rman], [0.0.1], [hello@thoughtbot.com])
+AC_INIT([rman], [0.0.2], [hello@thoughtbot.com])
 AM_INIT_AUTOMAKE([tar-ustar])
 
 VENDOR_DIRECTORY="vendor/gems"
